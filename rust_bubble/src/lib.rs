@@ -1,5 +1,5 @@
 #[no_mangle]
-pub extern "C" fn example_function(mut arr: *mut f64, len: i32) -> i32 {
+pub extern "C" fn example_function(arr: *mut f64, len: i32) -> i32 {
     if arr.is_null() || len <= 0 {
         return -1;
     }
